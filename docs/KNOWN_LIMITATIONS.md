@@ -6,7 +6,7 @@ Live Mistral OCR/model availability, deployed HTTPS access, EAS account authoriz
 
 ## OCR and correction
 
-- Real RAS/JEE papers were not supplied. Current parser evidence uses representative synthetic fixtures. Run the live fixture test and inspect actual sources once supplied.
+- Initial parser evidence uses representative synthetic fixtures. A user-supplied three-page JEE PDF now passes actual native upload/previews. Its approved one-page OCR job returned Mistral 429, so reading order, extracted options and diagram association on that paper are not yet verified. See UPLOAD_FIX_1.0.1.md.
 - Reading order follows Mistral's ordered blocks. Incorrect provider ordering is not automatically solved; compare the original and manually reorder/split/merge. Diagram association uses page-local Markdown references, not a separately trained layout model.
 - Only explicit numbered question starts and supported option conventions are parsed confidently. Dense tables, unusual keys, inline multi-option layouts and unsupported types need manual correction. Numerical/multiple-select types require reliable section cues or explicit manual selection.
 - Answer-key matching is conservative and limited to simple rows. Keys stay provisional until confirmed. Historical factual questions receive no guessed modern answers.

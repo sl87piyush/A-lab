@@ -1,5 +1,6 @@
 import * as SecureStore from "expo-secure-store";
 import { File } from "expo-file-system";
+import { fetch } from "expo/fetch";
 import { fileRoot, uid, type Source } from "./storage";
 async function timedFetch(url: string, options: RequestInit, ms: number) {
   const controller = new AbortController();
@@ -76,14 +77,18 @@ export async function request(path: string, options: RequestInit = {}) {
     );
   return data;
 }
-export async function upload(source: Source) {
+export function fileFormData(source: Pick<Source, "uri">) {
   const body = new FormData();
-  body.append("file", {
-    uri: source.uri,
-    name: source.name,
-    type: source.mime,
-  } as any);
-  return request("/v1/documents", { method: "POST", body });
+  // Expo fetch reads File bytes; React Native's old { uri, name, type } part
+  // is rejected by the SDK 58 multipart encoder before the request is sent.
+  body.append("file", new File(source.uri));
+  return body;
+}
+export async function upload(source: Source) {
+  return request("/v1/documents", {
+    method: "POST",
+    body: fileFormData(source),
+  });
 }
 export async function downloadThumbnail(documentId: string, page: number) {
   const { base, token } = await connection();

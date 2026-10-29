@@ -1,0 +1,12 @@
+{
+  "backend": "https://a-lab.onrender.com",
+  "pairingStatus": 200,
+  "uploadStatus": 200,
+  "inputBytes": 539422,
+  "pageCount": 3,
+  "thumbnailStatus": 200,
+  "thumbnailBytes": 66347,
+  "seconds": 4.39,
+  "liveOCRRequested": false,
+  "note": "Real attached PDF uploaded to the user-provided backend; no Mistral OCR call in this check."
+}

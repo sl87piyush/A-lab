@@ -38,6 +38,7 @@ import {
   pair,
   request,
   upload,
+  fileFormData,
 } from "./api";
 import { persistFile, uid, type Source } from "./storage";
 import {
@@ -2480,12 +2481,7 @@ export function DebugScreen() {
               const asset = picked.assets[0];
               if (new File(asset.uri).size > 25 * 1024 * 1024)
                 throw Error("Debug import limit is 25 MB.");
-              const body = new FormData();
-              body.append("file", {
-                uri: asset.uri,
-                name: asset.name,
-                type: asset.mimeType ?? "application/zip",
-              } as any);
+              const body = fileFormData(asset);
               const result = await request("/v1/debug/import", {
                 method: "POST",
                 body,

@@ -2,7 +2,9 @@
 
 ## Available local APK
 
-The verified local artifact is `artifacts/attemply-lab-1.0.0-arm64.apk` (about 42 MiB), for ARM64 Android 7+ devices. It includes JavaScript and launches without Metro. It was built locally with the generated development signing certificate, not through EAS. SHA-256 and signature evidence are in artifacts/APK_INFO.json / docs/APK_SIGNATURE.txt. Transfer it to Android and tap to install, or run `adb install -r` with its absolute path.
+The verified local artifact is `artifacts/attemply-lab-1.0.1-arm64.apk` (about 42 MiB), for ARM64 Android 7+ devices. It includes JavaScript and launches without Metro. It was built locally with the generated development signing certificate, not through EAS. SHA-256 and signature evidence are in artifacts/APK_INFO.json / docs/APK_SIGNATURE.txt. Transfer it to Android and tap to install, or run `adb install -r` with its absolute path.
+
+Version 1.0.1 fixes native multipart PDF/photo uploads and uses the same package/signing certificate as 1.0.0 for an in-place update. Choose Install/Update over the existing app to preserve local work.
 
 The offline demo works immediately. Live OCR still requires a reachable HTTPS backend and a valid Mistral key. This APK is not an iPhone app or a Play Store production release.
 
@@ -14,7 +16,7 @@ The offline demo works immediately. Live OCR still requires a reachable HTTPS ba
 - `preview`: internal Android **APK**; JavaScript bundled; no Metro required.
 - `production`: Android AAB for store distribution.
 
-The project uses `com.attemply.lab` for Android/iOS identifiers, version 1.0.0 and build/versionCode 1. Store identifier availability has not been verified.
+The project uses `com.attemply.lab` for Android/iOS identifiers, mobile version 1.0.1 and build/versionCode 2. Store identifier availability has not been verified.
 
 ## Configure EAS after login
 

@@ -2,7 +2,9 @@
 
 A native Expo app for turning printed questions into private practice tests, with a Node OCR service and deterministic attempt analysis.
 
-**An installable local Android APK is available at `artifacts/attemply-lab-1.0.0-arm64.apk` (ARM64, about 42 MiB).** It was built, signed, installed and demo-tested on an Android emulator without Metro. See ANDROID_APK.md for installation and remaining verification limits.
+**An installable local Android APK is available at `artifacts/attemply-lab-1.0.1-arm64.apk` (ARM64, about 42 MiB).** It was built, signed, installed and demo-tested on an Android emulator without Metro. See ANDROID_APK.md for installation and remaining verification limits.
+
+The **1.0.1** Android update fixes SDK 58 PDF/photo/JSON/ZIP multipart uploads. See [the upload-fix verification](docs/UPLOAD_FIX_1.0.1.md).
 
 **Start with the offline demo.** It requires no account, API key or backend. Live OCR requires your own configured backend and Mistral account. This repository is a private prototype; see the verification status in [docs/TEST_RESULTS.md](docs/TEST_RESULTS.md).
 

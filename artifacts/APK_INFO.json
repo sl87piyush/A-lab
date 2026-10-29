@@ -1,11 +1,13 @@
 {
-  "artifact": "artifacts/attemply-lab-1.0.0-arm64.apk",
-  "bytes": 43843721,
-  "sha256": "f283fdb645f39645c97fc8b25073b2eeff729df1725e3d88eda2e6c25c35e745",
+  "artifact": "artifacts/attemply-lab-1.0.1-arm64.apk",
+  "version": "1.0.1",
+  "versionCode": 2,
+  "bytes": 43843801,
+  "sha256": "a01740c76ced5edc9af2f3e684dd86f2bc305903f4f9a26eec254daaa2a3384f",
   "nativeABIs": [
     "arm64-v8a"
   ],
   "bundledJavaScript": true,
   "serverOnlyIdentifiersFound": [],
-  "build": "local Gradle release, development signing certificate; EAS not signed in"
+  "build": "local Gradle release, original development signing certificate retained"
 }

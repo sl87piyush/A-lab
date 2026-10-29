@@ -1,6 +1,6 @@
 # Verification record
 
-Date: 30 October 2026 (Asia/Kolkata). No live credentials or original user PDFs were available.
+Date: 30 October 2026 (Asia/Kolkata). The original 1.0.0 verification below had no live credentials or user PDFs. Follow-up 1.0.1 upload verification uses a user-provided PDF and the deployed Render backend; see [UPLOAD_FIX_1.0.1.md](UPLOAD_FIX_1.0.1.md).
 
 ## Passed source checks
 
@@ -9,7 +9,7 @@ Date: 30 October 2026 (Asia/Kolkata). No live credentials or original user PDFs 
 | `npm run typecheck` | Strict shared/API/mobile/test TypeScript passed |
 | `npm run lint` | Passed |
 | `npm test` | **60 passed, 3 explicitly skipped** |
-| `npm run test:mobile` | **11 passed** using React Native Testing Library / Jest Expo |
+| `npm run test:mobile` | **17 passed** using React Native Testing Library / Jest Expo (includes 6 upload regressions added in 1.0.1) |
 | `npm run build:api` | Production TypeScript output generated |
 | `cd apps/mobile && npx expo-doctor` | **20/20 checks passed** |
 | `npx expo export --platform android --output-dir dist/android` | Android Hermes release JavaScript bundle exported successfully |

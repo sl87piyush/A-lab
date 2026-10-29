@@ -1,0 +1,16 @@
+{
+  "backend": "https://a-lab.onrender.com",
+  "selectedPages": [
+    0
+  ],
+  "state": "failed",
+  "seconds": 3.9,
+  "capabilities": {
+    "ocr": "mistral-ocr-4-1",
+    "text": "mistral-small-latest",
+    "textAvailable": true,
+    "maxPages": 20,
+    "maxUploadBytes": 26214400
+  },
+  "error": "Mistral rate limit reached. Retry later."
+}
