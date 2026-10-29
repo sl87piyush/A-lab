@@ -4,7 +4,7 @@ services:
     name: attemply-lab-api
     runtime: docker
     plan: free
-    dockerfilePath: ./services/api/Dockerfile
+    dockerfilePath: ./Dockerfile
     dockerContext: .
     healthCheckPath: /health
     envVars:

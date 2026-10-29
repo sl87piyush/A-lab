@@ -33,7 +33,7 @@ Uploaded originals and raw OCR are private on the API disk. Failed temporary pre
 
 `render.yaml` explicitly selects `plan: free`, with no persistent disk. `DATA_DIR=/tmp/attemply` is temporary. This avoids the paid-instance/disk requirement in the previous blueprint. Render's Free plan is for testing: idle services sleep after 15 minutes, cold startup can take about a minute, and server uploads/job files disappear on restart, redeploy or sleep. Completed tests/history and retained originals are stored separately on the phone. After a server source expires, use **Prepare source again** before OCR. Mistral account credits/usage are separate from hosting.
 
-`services/api/Dockerfile` installs Node and Poppler, compiles the API and starts the correct output. Host PORT is respected; `/health` is the health check. SIGTERM/SIGINT shut down the server and await active processing.
+The root `Dockerfile` installs Node and Poppler, compiles the API and starts the correct output. Host PORT is respected; `/health` is the health check. SIGTERM/SIGINT shut down the server and await active processing.
 
 1. Use the updated `main` branch in the private GitHub repository. `.gitignore` and `.dockerignore` exclude local credentials, private files and build outputs.
 2. Start a new Blueprint creation from `render.yaml`, or reload the existing unsubmitted creation flow so it reads the latest commit. Verify it shows **Free** and no disk before deploying. If a stale Blueprint form continues to request payment, use the manual Web Service flow below. Account-specific restrictions can still prevent free deployment; no cardless account acceptance is claimed until Render accepts it.
@@ -50,7 +50,7 @@ In Render choose **New > Web Service**, connect the GitHub repository, and use:
 | Branch | `main` |
 | Root directory | Leave empty (repository root) |
 | Runtime / Language | Docker |
-| Dockerfile path | `./services/api/Dockerfile` |
+| Dockerfile path | `./Dockerfile` |
 | Docker build context | `.` |
 | Instance type | **Free** |
 | Health check path | `/health` |
@@ -65,7 +65,7 @@ Add these environment variables before creating the service:
 - MISTRAL_ANALYSIS_MODEL: `mistral-small-latest`.
 - DATA_DIR: `/tmp/attemply`.
 
-Leave PORT to Render. The Dockerfile supplies the start command. Do not attach a disk or select paid compute. If account verification still requires a payment method with **Free** selected, stop: this repository cannot override Render's account policy.
+Leave PORT to Render. The Dockerfile supplies the start command. A root `Dockerfile` is included so manually created services using Render's default Dockerfile path also build. Keep Root directory empty and Docker build context `.`; the build needs all workspace package manifests. Do not attach a disk or select paid compute. If account verification still requires a payment method with **Free** selected, stop: this repository cannot override Render's account policy.
 
 For durable server job/source storage later, choose an explicitly paid instance, attach a persistent disk at `/var/data`, and set DATA_DIR to `/var/data/attemply`. Only files under the mounted disk survive. The free default deliberately provides no durable server-storage guarantee.
 
