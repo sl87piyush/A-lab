@@ -27,7 +27,7 @@ Live Mistral OCR/model availability, deployed HTTPS access, EAS account authoriz
 
 ## Backend operations
 
-- Use one API process with its persistent disk; its processing queue is in memory while durable job states are on disk. Interrupted jobs are retryable failures, not transparently resumed upstream OCR calls. This is not a distributed job queue.
+- Use one API process. The default Render blueprint selects Free compute and temporary `/tmp/attemply` storage, so server uploads/jobs are lost on restart, redeploy or idle sleep. Re-prepare retained phone sources after server storage loss. Durable server recovery requires an explicitly paid service with a persistent disk. The processing queue is in memory; interrupted jobs are retryable failures only when their files survive. This is not a distributed job queue.
 - Sources/raw responses have short-term retention for retry/debug. Retention cleanup runs at startup and every ten minutes while the processing queue is idle. The app's server-delete action provides explicit removal. Host/disk access must remain private.
 - Upload and OCR processing are bounded, with rate limits, provider timeouts, disk cleanup and per-device reads. A proper private HTTPS deployment remains required; the local development server is not a deployed backend.
 - The Docker/Render blueprint was prepared; no container/hosting build is claimed without a successful run. Review hosting billing and credentials before deployment.

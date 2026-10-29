@@ -11,7 +11,7 @@ Workspace: `/Users/tarunchoudhary/p/attemply lab app`.
 - Camera, gallery, PDF picker, retained original files, rotation, percentage-based cropping, backend PDF thumbnails and selected page order.
 - Question editor, source comparison, diagram zoom, KaTeX-to-MathML WebView rendering, split/merge/reorder/delete, ignored-block restoration and manually confirmed keys.
 - Secure Fastify API: setup-code pairing, expiring JWT, per-device ownership, validated uploads, bounded queue, disk-backed import jobs, Mistral SDK OCR, account model verification, source-backed boundary suggestions, safe AI insight selection, OCR ZIP/JSON debug imports.
-- Docker / Render blueprint and EAS development, preview APK and production profiles.
+- Docker / Render **Free testing** blueprint (temporary server storage, no paid disk) and EAS development, preview APK and production profiles.
 
 ## Verified delivery
 

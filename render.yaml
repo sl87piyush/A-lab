@@ -1,7 +1,9 @@
+# Free testing deployment. Server uploads/jobs are temporary across restarts or sleep.
 services:
   - type: web
     name: attemply-lab-api
     runtime: docker
+    plan: free
     dockerfilePath: ./services/api/Dockerfile
     dockerContext: .
     healthCheckPath: /health
@@ -17,8 +19,4 @@ services:
       - key: MISTRAL_ANALYSIS_MODEL
         value: mistral-small-latest
       - key: DATA_DIR
-        value: /var/data/attemply
-    disk:
-      name: private-imports
-      mountPath: /var/data
-      sizeGB: 1
+        value: /tmp/attemply
