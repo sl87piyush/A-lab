@@ -1,0 +1,14 @@
+{
+  "backend": "https://a-lab.onrender.com",
+  "input": "approved first page only, rendered as PNG",
+  "state": "failed",
+  "seconds": 4.45,
+  "error": "Mistral rejected OCR (HTTP 429; code 1300). Check OCR limits, monthly allowance, and the API key's organization/workspace.",
+  "errorDetails": {
+    "httpStatus": 429,
+    "providerCode": "1300",
+    "reason": "rate-limit"
+  },
+  "checkedAtUTC": "2026-10-29T23:08:50.329229+00:00",
+  "automaticInferenceRetries": 0
+}

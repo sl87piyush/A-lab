@@ -8,7 +8,7 @@ Date: 30 October 2026 (Asia/Kolkata). The original 1.0.0 verification below had 
 | --- | --- |
 | `npm run typecheck` | Strict shared/API/mobile/test TypeScript passed |
 | `npm run lint` | Passed |
-| `npm test` | **60 passed, 3 explicitly skipped** |
+| `npm test` | **66 passed, 3 explicitly skipped** |
 | `npm run test:mobile` | **17 passed** using React Native Testing Library / Jest Expo (includes 6 upload regressions added in 1.0.1) |
 | `npm run build:api` | Production TypeScript output generated |
 | `cd apps/mobile && npx expo-doctor` | **20/20 checks passed** |
@@ -62,3 +62,9 @@ This is a local health verification only. The actual local pairing endpoint also
 ## iPhone and live-document acceptance
 
 Full Xcode Simulator tooling, Apple signing authorization and an iPhone were not available. iOS source compatibility is configured but not device verified. Camera photo → real OCR → corrected question → graded CBT → AI report and multi-page real PDF extraction remain blocked by missing credentials/host/material and still need phone acceptance.
+
+## Follow-up: provider error diagnosis
+
+A backend-only update adds sanitized provider HTTP status/code, retry metadata and reason to owner-authenticated failed-job status, with no automatic OCR retry. Six additional tests verify safe error handling, classification and per-device isolation; current core/API total is 66 passing, 3 skipped. The installed 1.0.1 APK reads the server error message directly and needs no rebuild for this diagnostic update. Per-minute throughput, included monthly usage and workspace spending caps are distinct controls. A generic 429 does not identify which control rejected a request; check the actual provider metadata and the API key's organization/workspace before recommending account changes.
+
+The diagnostic revision was verified live by `/health` returning `ocrDiagnosticsVersion: 1`. A single submission of the previously approved first page (rendered locally as PNG, with no other pages sent) returned HTTP 429, provider code `1300`, without usable retry-after or request ID metadata. It was not retried automatically. No credit-exhaustion conclusion or successful extraction is claimed. See `MISTRAL_DIAGNOSTIC_CHECK.json`.
