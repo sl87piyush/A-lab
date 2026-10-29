@@ -52,3 +52,7 @@ Debug ZIP format: `document/pages/page-1/markdown.md`, optional `page-metadata.j
 Place private user PDFs in `fixtures/` locally. The live fixture test runs only when PDFs and MISTRAL_API_KEY are both present; it is explicitly skipped otherwise. JSON fixtures are automatically parsed in the regression suite. `.gitignore` excludes real PDF/ZIP fixture content from publication. No user RAS/JEE PDFs were present during initial testing. The included JSONs are representative **synthetic** inputs, not evidence of accuracy on the user's actual papers.
 
 References: [Mistral OCR API](https://docs.mistral.ai/api/endpoint/ocr), [Mistral document processing](https://docs.mistral.ai/studio/document-processing/basic_ocr).
+
+## Provider rejection diagnostics
+
+Failed job status includes `errorDetails` with allowlisted HTTP status, provider code, reason, numeric Retry-After seconds and a validated request ID when available. SDK request objects, raw upstream bodies, credentials and source content are never serialized into these diagnostics or structured failure logs. HTTP 429 alone does not identify whether the account hit throughput, workspace/organization quota or capacity. The health response includes `ocrDiagnosticsVersion: 1` to verify the diagnostic build has deployed. No automatic inference retry or quota bypass is added.

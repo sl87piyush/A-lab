@@ -25,6 +25,7 @@ import { execFile } from "node:child_process";
 import { PDFDocument } from "pdf-lib";
 import sharp from "sharp";
 import { decodeExport } from "./exports.js";
+import { describeOcrFailure, type OcrFailureDetails } from "./ocr-error.js";
 import { z } from "zod";
 import {
   AttemptSchema,
@@ -61,6 +62,7 @@ type Job = {
   purpose: "questions" | "key";
   state: "queued" | "ocr" | "parsing" | "complete" | "failed";
   error?: string;
+  errorDetails?: OcrFailureDetails;
   createdAt: number;
   result?: Parsed;
   keys?: ReturnType<typeof parseKeys>;
@@ -159,6 +161,7 @@ export async function createApp(
     ok: true,
     service: "attemply-lab",
     ocrConfigured: Boolean(process.env.MISTRAL_API_KEY),
+    ocrDiagnosticsVersion: 1,
   }));
   app.post(
     "/v1/auth/pair",
@@ -218,15 +221,13 @@ export async function createApp(
       j.state = "complete";
     } catch (e) {
       j.state = "failed";
-      const error = e as any;
-      j.error =
-        error.statusCode === 401
-          ? "Mistral rejected the server API key."
-          : error.statusCode === 429
-            ? "Mistral rate limit reached. Retry later."
-            : /configured|unavailable/.test(String(error.message))
-              ? error.message
-              : "OCR processing failed or timed out. Check the source, model access and server credentials.";
+      const failure = describeOcrFailure(e);
+      j.error = failure.message;
+      j.errorDetails = failure.details;
+      app.log.warn(
+        { event: "ocr_job_failed", jobId: j.id, ...failure.details },
+        "OCR job failed; sanitized provider metadata only",
+      );
     } finally {
       await save(j.id, "job.json", j);
       processing--;
@@ -385,7 +386,12 @@ export async function createApp(
   });
   app.get<{ Params: { id: string } }>("/v1/imports/:id/status", async (req) => {
     const j = await job(req, req.params.id);
-    return { id: j.id, state: j.state, error: j.error };
+    return {
+      id: j.id,
+      state: j.state,
+      error: j.error,
+      errorDetails: j.errorDetails,
+    };
   });
   app.get<{ Params: { id: string } }>("/v1/imports/:id/result", async (req) => {
     const j = await job(req, req.params.id);

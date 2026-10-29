@@ -11,21 +11,28 @@ import {
   transition,
   demoQuestions,
 } from "../packages/shared/src/index.js";
-const aiMode = vi.hoisted(() => ({ available: false, ids: [] as string[] }));
+const aiMode = vi.hoisted(() => ({
+  available: false,
+  ids: [] as string[],
+  ocrFailure: null as Record<string, unknown> | null,
+}));
 vi.mock("../services/api/src/ocr.js", async (importOriginal) => {
   const real = await importOriginal<any>();
   return {
     ...real,
-    runOCR: async (id: string) => ({
-      raw: {
-        pages: [
+    runOCR: async (id: string) => {
+      if (aiMode.ocrFailure) throw aiMode.ocrFailure;
+      return {
+        raw: {
+          pages: [
+            { index: 0, markdown: "1. Synthetic OCR question\n(A) a\n(B) b" },
+          ],
+        },
+        parsed: parseOCR(id, [
           { index: 0, markdown: "1. Synthetic OCR question\n(A) a\n(B) b" },
-        ],
-      },
-      parsed: parseOCR(id, [
-        { index: 0, markdown: "1. Synthetic OCR question\n(A) a\n(B) b" },
-      ]),
-    }),
+        ]),
+      };
+    },
     boundarySuggestions: async () => [],
     verifyModels: async () => {
       if (!aiMode.available) throw Error("No test credentials");
@@ -371,6 +378,63 @@ describe("private API integration (OCR provider mocked)", () => {
       expect(response.json().insights).toEqual([]);
     } finally {
       aiMode.available = false;
+    }
+  });
+  it("returns private sanitized provider diagnostics for an OCR rejection", async () => {
+    const image = await sharp({
+      create: { width: 20, height: 20, channels: 3, background: "white" },
+    })
+      .png()
+      .toBuffer();
+    const uploaded = await app.inject({
+      method: "POST",
+      url: "/v1/documents",
+      ...upload(image, "image/png"),
+    });
+    const privateValue = "private-upstream-credential";
+    aiMode.ocrFailure = {
+      statusCode: 429,
+      body: JSON.stringify({
+        message: "Rate limit exceeded",
+        code: "1300",
+        authorization: privateValue,
+      }),
+    };
+    try {
+      const queued = await app.inject({
+        method: "POST",
+        url: "/v1/imports",
+        headers: auth(),
+        payload: { documentId: uploaded.json().id, pages: [0] },
+      });
+      expect(queued.statusCode).toBe(202);
+      let response: Awaited<ReturnType<typeof app.inject>> | undefined;
+      for (let i = 0; i < 30; i++) {
+        await new Promise((resolve) => setTimeout(resolve, 20));
+        response = await app.inject({
+          url: `/v1/imports/${queued.json().id}/status`,
+          headers: auth(),
+        });
+        if (response.json().state === "failed") break;
+      }
+      expect(response!.json()).toMatchObject({
+        state: "failed",
+        errorDetails: {
+          httpStatus: 429,
+          providerCode: "1300",
+          reason: "rate-limit",
+        },
+      });
+      expect(response!.json().error).toContain("code 1300");
+      expect(response!.body).not.toContain(privateValue);
+      const other = await app.inject({
+        url: `/v1/imports/${queued.json().id}/status`,
+        headers: { authorization: `Bearer ${otherToken}` },
+      });
+      expect(other.statusCode).toBe(404);
+      expect(other.body).not.toContain("1300");
+    } finally {
+      aiMode.ocrFailure = null;
     }
   });
   it("bounds concurrent source preparation as well as OCR jobs", async () => {
