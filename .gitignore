@@ -1,0 +1,17 @@
+node_modules/
+.expo/
+dist/
+.env
+.env.*
+!.env.example
+services/api/data/
+*.apk
+*.aab
+.DS_Store
+
+.build-cache/
+fixtures/*.pdf
+fixtures/*.zip
+fixtures/private/
+apps/mobile/android/
+apps/mobile/ios/

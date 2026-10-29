@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: attemply-lab-api
+    runtime: docker
+    dockerfilePath: ./services/api/Dockerfile
+    dockerContext: .
+    healthCheckPath: /health
+    envVars:
+      - key: MISTRAL_API_KEY
+        sync: false
+      - key: ATTEMPLY_SETUP_CODE
+        sync: false
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: MISTRAL_OCR_MODEL
+        value: mistral-ocr-4-1
+      - key: MISTRAL_ANALYSIS_MODEL
+        value: mistral-small-latest
+      - key: DATA_DIR
+        value: /var/data/attemply
+    disk:
+      name: private-imports
+      mountPath: /var/data
+      sizeGB: 1

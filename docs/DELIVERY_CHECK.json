@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-30",
+  "artifact": "artifacts/attemply-lab-1.0.0-arm64.apk",
+  "install": "passed",
+  "standaloneLaunchWithoutMetro": "passed",
+  "enteredResponse": "Question 1 option B",
+  "computedScore": "4/32",
+  "answered": 1,
+  "correct": 1,
+  "incorrect": 0,
+  "forceStopRestartHistory": "passed",
+  "narrowScreenDp": 320,
+  "nativeErrorsInInspectedLogWindow": 0,
+  "physicalPhone": "not tested",
+  "liveMistral": "not configured",
+  "cacheOnlyClear": "not completed; not a pass"
+}

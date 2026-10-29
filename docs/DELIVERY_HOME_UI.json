@@ -1,0 +1,202 @@
+[
+  {
+    "text": "attemply / lab",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[66,174][418,259]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "PRACTICE WITH PURPOSE",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[703,194][1214,238]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "YOUR PERSONAL QUESTION LAB",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[66,361][1214,405]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "From paper.\nTo progress.",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[66,435][1214,663]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "Turn the questions in front of you into your next breakthrough.",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[66,693][1214,837]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "PHOTO → PRACTICE",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[171,1008][543,1065]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "⌁",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[1079,966][1138,1106]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "A question sheet.\nA fresh start.",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[141,1160][1139,1358]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "Capture a page, check the questions, and make it a test of your own.",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[141,1412][1139,1556]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": ", Scan questions",
+    "class": "android.widget.Button",
+    "bounds": "[141,1610][1139,1760]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[444,1655][501,1714]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "Scan questions",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[525,1654][836,1715]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": ", Upload PDF",
+    "class": "android.widget.Button",
+    "bounds": "[66,1889][625,2039]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[187,1934][244,1993]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "Upload PDF",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[268,1933][504,1994]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": ", Choose photos",
+    "class": "android.widget.Button",
+    "bounds": "[655,1889][1214,2039]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[742,1934][799,1993]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "Choose photos",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[823,1933][1127,1994]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "Take a test drive",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[129,2157][571,2242]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "OFFLINE",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[969,2171][1121,2228]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "8 original sample questions. Real timer, scoring, and insights. No setup needed.",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[129,2279][1151,2423]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": "Try demo CBT →",
+    "class": "android.widget.Button",
+    "bounds": "[129,2459][1151,2609]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "Try demo CBT →",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[468,2502][812,2565]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "Recent attempts",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[66,2726][513,2784]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "0 saved",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[1078,2740][1213,2784]",
+    "clickable": "false",
+    "focused": "false"
+  }
+]

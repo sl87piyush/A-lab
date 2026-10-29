@@ -1,0 +1,10 @@
+{
+  "localHealth": {
+    "ok": true,
+    "service": "attemply-lab",
+    "ocrConfigured": false
+  },
+  "pairingHttpStatus": 200,
+  "expiringTokenReturned": true,
+  "secretValuesPrinted": false
+}

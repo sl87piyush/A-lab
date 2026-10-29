@@ -1,0 +1,194 @@
+[
+  {
+    "text": "attemply / lab",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[66,174][418,259]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "YOUR RESULT",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[948,194][1214,238]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "ONE ATTEMPT. NEW INFORMATION.",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[66,361][1214,405]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "The Attemply sample",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[66,435][1214,549]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "8 of 8 questions have confirmed keys. ",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[66,579][1214,651]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "YOUR SCORE",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[147,786][1133,830]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "4 / 32",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[147,866][1133,1122]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "1 questions attempted. Every attempt gives you something to work with.",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[147,1158][1133,1302]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "Attempted",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[129,1500][562,1557]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "1/8",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[129,1593][562,1714]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "Attempt rate",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[718,1500][1151,1557]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "13%",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[718,1593][1151,1714]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "Elapsed time",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[129,1870][562,1927]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "00:27",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[129,1963][562,2084]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "Correct",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[718,1870][1151,1927]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "1",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[718,1963][1151,2084]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "Incorrect",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[129,2240][562,2297]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "0",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[129,2333][562,2454]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "Graded accuracy",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[718,2240][1151,2297]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "100%",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[718,2333][1151,2454]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "Negative marks",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[129,2610][562,2667]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "0",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[129,2703][562,2784]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "Unattempted",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[718,2610][1151,2667]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "7",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[718,2703][1151,2784]",
+    "clickable": "false",
+    "focused": "false"
+  }
+]

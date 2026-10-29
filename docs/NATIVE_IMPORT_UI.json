@@ -1,0 +1,242 @@
+[
+  {
+    "text": "",
+    "content-desc": "Back",
+    "class": "android.view.ViewGroup",
+    "bounds": "[66,174][183,294]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[90,198][159,270]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "SOURCE WORKSPACE",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[803,212][1214,256]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "2. 60.png",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[129,330][849,144]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": "Remove",
+    "class": "android.widget.Button",
+    "bounds": "[879,330][1151,177]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "Remove",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[933,330][1097,132]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": "Check image before OCR",
+    "class": "android.view.ViewGroup",
+    "bounds": "[129,330][1151,840]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "Check image before OCR ↗",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[129,783][1151,840]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": "Rotate 90°",
+    "class": "android.widget.Button",
+    "bounds": "[129,876][451,1026]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "Rotate 90°",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[183,920][397,981]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": "Crop",
+    "class": "android.widget.Button",
+    "bounds": "[481,876][685,1026]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "Crop",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[535,920][631,981]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": "Move up",
+    "class": "android.widget.Button",
+    "bounds": "[129,1062][410,1212]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "Move up",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[183,1106][356,1167]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "Original retained",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[440,1108][724,1165]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": "Prepare source & page previews",
+    "class": "android.widget.Button",
+    "bounds": "[129,1248][1151,1398]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "Prepare source & page previews",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[314,1292][965,1353]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "3. Attemply-synthetic.pdf",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[129,1610][849,1695]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": "Remove",
+    "class": "android.widget.Button",
+    "bounds": "[879,1578][1151,1728]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "Remove",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[933,1622][1097,1683]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "PDF preserved. Prepare to see page thumbnails.",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[129,1764][1151,1821]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": "Move up",
+    "class": "android.widget.Button",
+    "bounds": "[129,1857][410,2007]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "Move up",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[183,1901][356,1962]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "Original retained",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[440,1903][724,1960]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": "Prepare source & page previews",
+    "class": "android.widget.Button",
+    "bounds": "[129,2043][1151,2193]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "Prepare source & page previews",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[314,2087][965,2148]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": "Review 8 questions →",
+    "class": "android.widget.Button",
+    "bounds": "[66,2310][1214,2460]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "Review 8 questions →",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[415,2353][864,2416]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": "Set up live OCR connection",
+    "class": "android.widget.Button",
+    "bounds": "[66,2514][1214,2664]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "Set up live OCR connection",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[366,2558][914,2619]",
+    "clickable": "false",
+    "focused": "false"
+  }
+]

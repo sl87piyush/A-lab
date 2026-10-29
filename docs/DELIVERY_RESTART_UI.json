@@ -1,0 +1,162 @@
+[
+  {
+    "text": "attemply / lab",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[66,174][418,259]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "PRACTICE WITH PURPOSE",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[448,175][894,258]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "Take a test drive",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[129,295][571,126]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "OFFLINE",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[649,295][801,112]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "8 original sample questions. Real timer, scoring, and insights. No setup needed.",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[129,295][831,379]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": "Try demo CBT →",
+    "class": "android.widget.Button",
+    "bounds": "[129,415][831,565]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "Try demo CBT →",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[308,458][652,521]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": "Open question workspace (8)",
+    "class": "android.widget.Button",
+    "bounds": "[66,682][894,832]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "Open question workspace (8)",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[184,726][776,787]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "Recent attempts",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[66,886][513,971]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "1 saved",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[759,900][894,957]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": "The Attemply sample, 10/30/2026 · 1/8 attempted, 4/32",
+    "class": "android.view.ViewGroup",
+    "bounds": "[66,1025][894,1366]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "The Attemply sample",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[129,1088][673,1246]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "4/32",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[703,1153][831,1238]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "10/30/2026 · 1/8 attempted",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[129,1246][673,1303]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": ", Connection & local data",
+    "class": "android.widget.Button",
+    "bounds": "[66,1420][894,1570]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[199,1465][256,1524]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "Connection & local data",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[280,1464][760,1525]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": "Developer diagnostics",
+    "class": "android.view.ViewGroup",
+    "bounds": "[66,1624][894,1728]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "ATTEMPLY LAB · PRIVATE PROTOTYPE",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[66,1624][894,1728]",
+    "clickable": "false",
+    "focused": "false"
+  }
+]

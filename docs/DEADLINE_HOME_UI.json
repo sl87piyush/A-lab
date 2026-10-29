@@ -1,0 +1,290 @@
+[
+  {
+    "text": "attemply / lab",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[66,174][418,259]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "PRACTICE WITH PURPOSE",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[703,194][1214,238]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "Capture a page, check the questions, and make it a test of your own.",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[141,295][1139,126]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": ", Scan questions",
+    "class": "android.widget.Button",
+    "bounds": "[141,295][1139,330]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[444,295][501,284]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "Scan questions",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[525,295][836,285]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": ", Upload PDF",
+    "class": "android.widget.Button",
+    "bounds": "[66,459][625,609]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[187,504][244,563]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "Upload PDF",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[268,503][504,564]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": ", Choose photos",
+    "class": "android.widget.Button",
+    "bounds": "[655,459][1214,609]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[742,504][799,563]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "Choose photos",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[823,503][1127,564]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "Take a test drive",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[129,727][571,812]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "OFFLINE",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[969,741][1121,798]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "8 original sample questions. Real timer, scoring, and insights. No setup needed.",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[129,849][1151,993]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": "Try demo CBT →",
+    "class": "android.widget.Button",
+    "bounds": "[129,1029][1151,1179]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "Try demo CBT →",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[468,1072][812,1135]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": "Open question workspace (8)",
+    "class": "android.widget.Button",
+    "bounds": "[66,1296][1214,1446]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "Open question workspace (8)",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[344,1340][936,1401]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "Recent attempts",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[66,1500][513,1585]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "3 saved",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[1078,1514][1213,1571]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": "Timer persistence check, 10/30/2026 · 0/8 attempted, 0/32",
+    "class": "android.view.ViewGroup",
+    "bounds": "[66,1639][1214,1907]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "Timer persistence check",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[129,1702][993,1787]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "10/30/2026 · 0/8 attempted",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[129,1787][993,1844]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "0/32",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[1023,1730][1151,1815]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": "Reattempt · The Attemply sample, 10/30/2026 · 1/1 attempted, 4/4",
+    "class": "android.view.ViewGroup",
+    "bounds": "[66,1961][1214,2302]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "Reattempt · The Attemply sample",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[129,2024][1028,2182]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "4/4",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[1057,2089][1150,2174]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "10/30/2026 · 1/1 attempted",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[129,2182][1028,2239]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": "The Attemply sample, 10/30/2026 · 8/8 attempted, 27/32",
+    "class": "android.view.ViewGroup",
+    "bounds": "[66,2356][1214,2624]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "The Attemply sample",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[129,2419][959,2504]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "10/30/2026 · 8/8 attempted",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[129,2504][959,2561]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "27/32",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[988,2447][1150,2532]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": ", Connection & local data",
+    "class": "android.widget.Button",
+    "bounds": "[66,2678][1214,2784]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[359,2723][416,2782]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "Connection & local data",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[440,2722][920,2783]",
+    "clickable": "false",
+    "focused": "false"
+  }
+]

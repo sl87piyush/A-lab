@@ -1,0 +1,17 @@
+.git
+**/node_modules
+**/dist
+**/.expo
+**/android
+**/ios
+**/.env
+**/.env.*
+!**/.env.example
+**/data
+.build-cache
+artifacts
+fixtures/private
+fixtures/*.pdf
+fixtures/*.zip
+docs/screenshots
+.DS_Store

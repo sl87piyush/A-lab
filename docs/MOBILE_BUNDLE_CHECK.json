@@ -1,0 +1,6 @@
+{
+  "nativeReleaseBundleExists": true,
+  "serverOnlyIdentifiersFound": [],
+  "serverSourcesBundled": [],
+  "note": "No actual Mistral secret was present in this session; this verifies server-only code/identifiers are excluded."
+}

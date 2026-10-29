@@ -1,0 +1,202 @@
+[
+  {
+    "text": "",
+    "content-desc": "Back",
+    "class": "android.view.ViewGroup",
+    "bounds": "[66,174][183,294]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[90,198][159,270]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "TEST SETUP",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[973,212][1214,256]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "03 / MAKE IT YOUR TEST",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[66,396][1214,440]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "A little focus.\nA lot of possibility.",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[66,470][1214,698]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "Only questions marked ready enter this attempt. You can revisit the rest later.",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[66,728][1214,872]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "8 ready questions · 8 graded",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[159,1004][1121,1061]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "Test title",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[129,1112][1151,1169]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "The Attemply sample",
+    "content-desc": "Test title",
+    "class": "android.widget.EditText",
+    "bounds": "[129,1190][1151,1345]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": "Timed CBT",
+    "class": "android.widget.Button",
+    "bounds": "[129,1381][463,1531]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "Timed CBT",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[183,1425][409,1486]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": "Untimed practice",
+    "class": "android.widget.Button",
+    "bounds": "[493,1381][947,1531]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "Untimed practice",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[547,1425][893,1486]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "Duration in minutes",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[129,1567][1151,1624]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "20",
+    "content-desc": "Duration in minutes",
+    "class": "android.widget.EditText",
+    "bounds": "[129,1645][1151,1800]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "MARKING SCHEME",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[129,1836][1151,1880]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": "+4 / −1",
+    "class": "android.widget.Button",
+    "bounds": "[129,1916][378,2066]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "+4 / −1",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[183,1960][324,2021]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "",
+    "content-desc": "+1 / 0",
+    "class": "android.widget.Button",
+    "bounds": "[408,1916][632,2066]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "+1 / 0",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[462,1960][578,2021]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "Marks for a correct answer",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[129,2102][1151,2159]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "4",
+    "content-desc": "Marks for a correct answer",
+    "class": "android.widget.EditText",
+    "bounds": "[129,2180][1151,2335]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "Marks for an incorrect answer (zero or negative)",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[129,2371][1151,2428]",
+    "clickable": "false",
+    "focused": "false"
+  },
+  {
+    "text": "-1",
+    "content-desc": "Marks for an incorrect answer (zero or negative)",
+    "class": "android.widget.EditText",
+    "bounds": "[129,2449][1151,2604]",
+    "clickable": "true",
+    "focused": "false"
+  },
+  {
+    "text": "Unattempted questions earn 0. Multiple-select uses exact matching, without partial credit. Numerical questions use the key's configured tolerance. Questions without confirmed keys remain ungraded.",
+    "content-desc": "",
+    "class": "android.widget.TextView",
+    "bounds": "[129,2640][1151,2784]",
+    "clickable": "false",
+    "focused": "false"
+  }
+]
