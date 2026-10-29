@@ -1,17 +1,45 @@
+# Dependencies and Expo caches
 node_modules/
 .expo/
+
+# Generated builds, test output and caches
 dist/
+coverage/
+.build-cache/
+*.tsbuildinfo
+.eslintcache
+*.log
+__pycache__/
+*.pyc
+
+# Local environment files; keep the safe template in Git
 .env
 .env.*
 !.env.example
-services/api/data/
+
+# Credentials accidentally saved as filenames
+*_API_KEY=*
+ATTEMPLY_SETUP_CODE=*
+SESSION_SECRET=*
+
+# Private backend data and document fixtures
+/services/api/data/
+/fixtures/**/*.pdf
+/fixtures/**/*.zip
+/fixtures/private/
+
+# Reproducible Expo native projects
+/apps/mobile/android/
+/apps/mobile/ios/
+
+# App packages and signing credentials
 *.apk
 *.aab
-.DS_Store
+*.ipa
+*.jks
+*.keystore
+*.p12
+*.mobileprovision
 
-.build-cache/
-fixtures/*.pdf
-fixtures/*.zip
-fixtures/private/
-apps/mobile/android/
-apps/mobile/ios/
+# macOS metadata
+.DS_Store

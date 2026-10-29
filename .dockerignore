@@ -15,3 +15,8 @@ fixtures/*.pdf
 fixtures/*.zip
 docs/screenshots
 .DS_Store
+
+# Credentials accidentally saved as filenames
+**/*_API_KEY=*
+**/ATTEMPLY_SETUP_CODE=*
+**/SESSION_SECRET=*
